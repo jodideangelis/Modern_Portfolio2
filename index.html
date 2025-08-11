@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="desktop.css" />
+    <link rel="stylesheet" href="dark.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Kalam:wght@300;400;700&family=Megrim&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3cabeecb83.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Jodi DeAngelis Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <!-- Mobile Nav -->
+      <nav class="mobile mobile-nav">
+        <ul>
+          <li class="nav-left"><a href="#">Jodi DeAngelis</a></li>
+          <li class="nav-right" id="hamburger" onclick="menuToggle()">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+            <!-- shift alt + down to duplicate easily -->
+          </li>
+        </ul>
+      </nav>
+      <!-- Desktop Nav -->
+      <nav class="desktop desktop-nav">
+        <div class="nav-left">
+          <a href="#">Jodi DeAngelis</a>
+        </div>
+        <ul class="nav-right">
+          <li class="theme" onclick="theme()">
+            <i class="fa-light fa-moon"></i>
+            <i class="fa-light fa-sun"></i>
+          </li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu" class="hamburger-menu">
+      <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="theme" onclick="theme()">
+          <i class="fa-light fa-moon"></i>
+          <i class="fa-light fa-sun"></i>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <h1>Web Designer & Developer</h1>
+
+      <div class="timeline-container">
+        <h2>Welcome</h2>
+        <div class="hero-timeline">
+          <div class="text-container left-container">
+            <div class="hero-text-box">
+              <p>
+                Hi, I'm Jodi. I am a creative who looks at web design &
+                development through an artistic lens. My process continuously
+                asks me to innovate, change perspectives, challenge myself,
+                solve problems, and try new things.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-timeline">
+          <div class="text-container right-container">
+            <div class="hero-text-box">
+              <p>
+                My focus is to serve the missions of those I work with. Websites
+                for small businesses, social organizations, event promotion,
+                artist portfolios... if you have a cause, then I'm here to help.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-timeline">
+          <div class="text-container left-container">
+            <div class="hero-text-box">
+              <p>
+                I enjoy creating minimal, aesthetic, intuitive, and engaging
+                designs that are as unique as your business.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 class="dive-in">Let's dive in.</h2>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1 class="section-title">Skills</h1>
+      <p>Web Technologies I am proficient at:</p>
+      <div class="icons">
+        <a href="https://www.figma.com" target="_blank">
+          <img src="./images/figma.png" alt="Figma Logo" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+        >
+          <img src="./images/html.png" alt="HTML Logo" />
+        </a>
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          target="_blank"
+        >
+          <img src="./images/css.png" alt="CSS Logo" />
+        </a>
+        <a href="https://git-scm.com/" target="_blank">
+          <img src="./images/git.png" alt="Git Logo" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Project Cards -->
+    <section id="projects">
+      <h1 class="section-title">Featured Works</h1>
+
+      <div class="project-card">
+        <div class="card-text">
+          <span class="project-title">Flying P. Ranch</span>
+          <p class="project-description">
+            I am currently assisting with the design and build of the Flying P
+            Ranch website using html, css, & javascript.
+          </p>
+        </div>
+        <div class="img-frame">
+          <img src="./images/flying-svg.svg" alt="Flying P Ranch" />
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-text">
+          <span class="project-title">Posters & Events</span>
+          <p class="project-description">
+            An exploration of color, typography, contrast, texture, space, &
+            other design elements.
+          </p>
+        </div>
+        <div class="img-frame">
+          <img src="./images/posters-2.png" alt="Posters" />
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-text">
+          <span class="project-title">The Root Coffee Co.</span>
+          <p class="project-description">
+            Figma design for a coffee shop. Build in progress using html, css, &
+            javascript.
+          </p>
+        </div>
+        <div class="img-frame">
+          <img src="./images/root-svg.svg" alt="The Root Coffee" />
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="card-text">
+          <span class="project-title">Makeup by Eva</span>
+          <p class="project-description">
+            Figma design example for a portfolio website with a solid gradient
+            background on the home page. This is a challenge for myself to use
+            images and text to create related sections, rather than typical
+            horizontal blocked sections.
+          </p>
+        </div>
+        <div class="img-frame">
+          <img src="./images/makeup-svg.svg" alt="Makeup by Eva" />
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-text">
+          <span class="project-title">Endure by Faith</span>
+          <p class="project-description">
+            Assisted in the build of Endure by Faith, a website of resources for
+            military veterans in job employment, skill building, and community.
+          </p>
+        </div>
+        <div class="img-frame ebf-frame">
+          <img
+            class="ebf-img"
+            src="./images/ebf_screenshot.png"
+            alt="Endure by Faith"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact">
+        <div class="contact-left">
+          <h1 class="section-title">Got a Project?</h1>
+          <h3>Let's Connect</h3>
+          <a href="mailto:jodi.deangelis3@gmail.com"
+            >jodi.deangelis3@gmail.com</a
+          >
+          <div class="social-links">
+            <a href="https://github.com/jodideangelis" target="_blank">
+              <img
+                src="./images/github_icon.png"
+                alt="Github Icon"
+                class="dark-icon"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="50"
+                height="50"
+                viewBox="0 0 300 300"
+                class="light-icon"
+              >
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect
+                      id="Rectangle_29"
+                      data-name="Rectangle 29"
+                      width="300"
+                      height="300"
+                      fill="#fff"
+                    />
+                  </clipPath>
+                </defs>
+                <g
+                  id="Group_28"
+                  data-name="Group 28"
+                  clip-path="url(#clip-path)"
+                >
+                  <path
+                    id="Path_91"
+                    data-name="Path 91"
+                    d="M91.5,227.281C29,246.031,29,196.031,4,189.781m175,75V216.406a42.127,42.127,0,0,0-11.75-32.625c39.25-4.375,80.5-19.25,80.5-87.5A68,68,0,0,0,229,49.406a63.377,63.377,0,0,0-1.125-47.125S213.125-2.094,179,20.781a167.249,167.249,0,0,0-87.5,0C57.375-2.094,42.625,2.281,42.625,2.281A63.375,63.375,0,0,0,41.5,49.406a68,68,0,0,0-18.75,47.25c0,67.75,41.25,82.625,80.5,87.5a42.125,42.125,0,0,0-11.75,32.25v48.375"
+                    transform="translate(21 10.219)"
+                    fill="none"
+                    stroke="#f3f3f3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="15"
+                  />
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jodi-deangelis/"
+              target="_blank"
+            >
+              <img
+                src="./images/linkedIn_icon.png"
+                alt="LinkedIn Icon"
+                class="dark-icon"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="47"
+                viewBox="0 0 300 320"
+                class="light-icon"
+              >
+                <g
+                  id="Group_29"
+                  data-name="Group 29"
+                  transform="translate(-0.5 -0.5)"
+                >
+                  <path
+                    id="Path_92"
+                    data-name="Path 92"
+                    d="M218,98a90,90,0,0,1,90,90V293H248V188a30,30,0,0,0-60,0V293H128V188a90,90,0,0,1,90-90Z"
+                    fill="none"
+                    stroke="#f3f3f3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="15"
+                  />
+                  <path
+                    id="Path_93"
+                    data-name="Path 93"
+                    d="M68,113H8V293H68Z"
+                    fill="none"
+                    stroke="#f3f3f3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="15"
+                  />
+                  <path
+                    id="Path_94"
+                    data-name="Path 94"
+                    d="M38,68A30,30,0,1,0,8,38,30,30,0,0,0,38,68Z"
+                    fill="none"
+                    stroke="#f3f3f3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="15"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="contact" method="POST" netlify class="form-contact">
+            <!-- form name is contact  -->
+            <div class="input-group">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Name"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+            <div class="input-group">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <button class="btn" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Loosely designed in <span>Figma</span> and coded in
+        <span>Visual Studio Code</span> by yours truly. Built with
+        <span>HTML</span> & <span>CSS</span>, deployed <span>Netlify</span>.
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- shift + ctrl + l for hightlighting multiple sections -->

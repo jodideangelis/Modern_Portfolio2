@@ -1,0 +1,109 @@
+.dark-mode {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.dark-mode a {
+  color: #fff;
+}
+
+.dark-mode h1 {
+  font-family: var(--tertiary-text);
+  font-size: 65px;
+  line-height: 65px;
+  padding-bottom: 20px;
+}
+
+.dark-mode .mobile-nav {
+  background-color: var(--dark-color);
+}
+
+.dark-mode .fa-moon,
+.dark-mode .dark-icon {
+  display: none;
+}
+
+.dark-mode .hamburger-menu li a,
+.dark-mode .fa-sun {
+  /* opposite light mode under the contact section */
+  display: block !important;
+  color: #000;
+}
+
+.dark-mode .nav-right span {
+  background-color: #fff;
+}
+
+/* Hero */
+.dark-mode h1 {
+  font-size: 65px;
+}
+
+.dark-mode .hero-timeline::after {
+  background-color: #fff;
+}
+
+/* Projects */
+.dark-mode .project-description {
+  color: #fff;
+}
+
+/* Contact */
+.dark-mode .light-icon {
+  display: inline !important;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Desktop */
+@media (min-width: 961px) {
+  .dark-mode .btn {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .dark-mode .btn:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .dark-mode .btn:before,
+  .dark-mode .btn:after {
+    background: #fff;
+  }
+
+  .dark-mode .desktop-nav {
+    background-color: var(--dark-color);
+    border-color: #fff;
+  }
+
+  .dark-mode .desktop-nav i {
+    padding-top: 5px;
+    color: #fff;
+  }
+
+  /* Hero */
+  .dark-mode h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .dark-mode .hero-timeline::after {
+    background-color: #fff;
+  }
+
+  /* Projects */
+  .dark-mode .project-description {
+    color: #fff;
+  }
+
+  /* Contact */
+  .dark-mode .contact-left h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+  }
+}
